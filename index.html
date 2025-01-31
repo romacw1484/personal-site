@@ -1,52 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William's Website</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon-Themed Portfolio with Animated Card</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
+  <!-- MAIN WRAPPER (for overall page spacing) -->
+  <div class="page-wrapper">
+
+    <!-- HEADER: Simple top bar with nav links -->
     <header class="header">
-        <div class="header-logo">Welcome to my site...</div>
-        <nav class="header-links">
-            <a href="projects.html" class="button">Projects</a>
-            <a href="https://github.com/romacw1484" class="button">GitHub</a> 
-            <a href="https://www.linkedin.com/in/william-romac-95378224a/" class="button">LinkedIn</a>
-        </nav>
+      <h1 class="site-title">welcome</h1>
+      <nav class="header-nav">
+        <a href="#works">Design Works</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <section class="main-title">
-        <h1>Hi, I'm William Romac</h1>
-        <p class="subtext">Junior at Fordham University studying Computer Science...</p>
-        <div class="image-wrapper">
-            <img src="Screenshot 2024-01-31 at 9.31.29 AM.png" width="300px" alt="William" class="profile-image">
-        </div>
-    </section>
-    
-    <section class="info-section">
-        <div class="info-box">
-            <a href="foodhome.html" class="button-large" id="foodwebsite">Food Webpage</a>
-        </div>
-        <div class="info-box">
-            <a href="https://retro-chat-app-cb79717625e8.herokuapp.com/login" class="button-large" id="retro-chat-button">Retro-Chat-App</a>
-        </div>
-        <div class="info-box">
-            <a href="photo.html" class="button-large" id="photo-button">Photography</a>
-        </div>
-    </section>
+    <!-- MAIN CONTENT uses a grid: hero on the left, about on the right -->
+    <main class="main-grid">
 
-    <section class="quote">
-        <p><i>"The only way to discover the limits of the possible is to go beyond them into the impossible."</i></p>
-        <footer>- Arthur C. Clarke</footer>
-    </section>
+      <!-- HERO bounding box -->
+      <section class="hero-box">
+        <!-- Left side: text, description, social icons/buttons -->
+        <div class="hero-left">
+          <p class="subtitle">welcome</p>
+          <h2 class="hero-title">
+            Hi, I'm <span class="highlight">William Romac</span>,
+            a computer science student at Fordham University with intetest 
+          </h2>
+          <p class="hero-desc">
+            Feel free to reach out to me if you have any projects in mind,
+            or just to say hello.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="social-btn">GitHub</a>
+            <a href="#" class="social-btn">LinkedIn</a>
+            <a href="#" class="social-btn">Dribbble</a>
+            <a href="#" class="social-btn">✉️</a>
+            <a href="#" class="main-cta">Book a call</a>
+          </div>
+        </div>
+        <!-- Right side: 3D avatar or any image -->
+        <div class="hero-right">
+          <img 
+            src="avatar.png" 
+            alt="3D avatar of Gianmarco" 
+            class="hero-avatar"
+          />
+        </div>
+      </section>
 
-    <section class="call-to-action">
-        <button id="fireButton" class="button-action">Don't Press Me!</button>
-    </section>
+      <!-- SIDEBAR: About me -->
+      <aside class="sidebar">
+        <h3>About me</h3>
+        <p>
+          Hi, I'm Gianmarco, a front-end software developer from Italy.
+        </p>
+        <p class="tools-title">My primary tools of choice include:</p>
+        <ul class="tools-list">
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Solidjs</li>
+          <li>Astro</li>
+          <li>Svelte</li>
+          <li>Nodejs</li>
+        </ul>
+        <p class="about-desc">
+          Beyond coding, I'm passionate about design, illustration, animation 
+          and 3D modelling and traveling. An unusual hobby of mine is collecting 
+          vintage passports; they're interesting pieces of history to me.
+        </p>
+        <p class="about-desc">
+          While I have some preferred tools, I always choose the best one for 
+          the job, even if it's not on my usual list. My goal is to find the 
+          right solution for each project.
+        </p>
+      </aside>
 
-    <script src="script.js" defer></script>
+      <!-- LOWER “CARDS” SECTION -->
+      <div class="cards-section">
+        <!-- Example card row 1 -->
+        <div class="card">
+          <h4>Let's start working together!</h4>
+          <div class="card-sub">
+            <p>Contact Details</p>
+            <p>contact@gianmarcocavallo.com<br>Italy</p>
+          </div>
+          <div class="card-sub">
+            <p>Socials</p>
+            <p>LinkedIn<br>GitHub<br>Medium<br>Discord</p>
+          </div>
+        </div>
+
+        <div class="card clock-card">
+          <h2 class="clock-display">5:24 AM</h2>
+        </div>
+
+        <div class="card design-works" id="works">
+          <h4>Design Works</h4>
+          <a href="#" class="card-link">↗</a>
+        </div>
+
+        <!-- Card row 2 -->
+        <div class="card works-card">
+          <div class="info-box">
+            <a href="photo.html" class=".info-section" id="photo-button">  <h4>Photograohy</h4></a>
+        </div>
+        </div>
+
+        <div class="card now-card">
+          <h4>Now</h4>
+          <p>what's that?</p>
+          <p>Currently working as freelancer</p>
+        </div>
+
+        <div class="card map-card">
+          <h4>Countries I visited</h4>
+          <a href="#" class="card-link">↗</a>
+        </div>
+
+        <!-- Another card row (Playground & the animation card) -->
+        <div class="card playground-card">
+          <h4>Playground</h4>
+          <a href="#" class="card-link">↗</a>
+        </div>
+
+        <!-- NEW ANIMATION CARD -->
+        <div class="card animation-card">
+          <canvas id="c"></canvas>
+        </div>
+      </div><!-- /.cards-section -->
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2024 • Crafted with ❤️ using Astro by Gianmarco.</p>
+    </footer>
+
+  </div><!-- /.page-wrapper -->
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
 </body>
 </html>
